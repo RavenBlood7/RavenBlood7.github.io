@@ -1,4 +1,13 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>well done</title>
+</head>
+<body>
 Thank you for contributing. The details have been added:
+<br/>
+<br/>
+
 <?php
 
 $format = "d F 'y ,h:m:s";
@@ -22,7 +31,9 @@ $toWrite .= 	$_POST["TOD"].','.
 			$_POST["input"].','.
 			$_POST["comment"]."\n";
 			
-//file_put_contents("DT.dat", $toWrite, FILE_APPEND);
+file_put_contents("DT.dat", $toWrite, FILE_APPEND);
 echo $toWrite;
 
 ?>
+</body>
+</html>
