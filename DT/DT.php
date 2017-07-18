@@ -22,7 +22,7 @@ $toWrite .= 	$_POST["TOD"].','.
 			$_POST["input"].','.
 			$_POST["comment"]."\n";
 			
-file_put_contents("DT.dat", $toWrite, FILE_APPEND);
+//file_put_contents("DT.dat", $toWrite, FILE_APPEND);
 echo $toWrite;
 
 ?>
