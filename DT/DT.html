@@ -1,7 +1,7 @@
 <!DOCTYPE>
 <html>
 <head>
-	<title>South Gate Lodge</title>
+	<title>Depressed?</title>
 	<script type='text/javascript' src='DT.js'></script>
 </head>
 <body>
@@ -9,15 +9,67 @@
 	<hr />
 <!-- put php load in here-->	
 	<div>
-	<form align="centre">
-		<label>Overall:</label>
-		<input id="overall"></input>
+	<form action="DT.php" method="post">
+		<label>Time Of Day (M/A/E)</label>
+		<input type="text" name="TOD" value="M"></input>
 		<br/>
-		<label>Mood</label>
-		<input id="mood"></input>
+		<label>Overall:</label>
+		<input type="number" name="overall" value="50"></input>
+		<br/>
+		<label>Feelings</label>
+		<input type="number"name="feelings" value="50"></input>
+		<br/>
+		<label>Thoughts</label>
+		<input type="number"name="thoughts" value="50"></input>
+		<br/>
+		<label>Confidence</label>
+		<input type="number"name="confidence" value="50"></input>
+		<br/>
+		<label>Emotional Energy</label>
+		<input type="number"name="emo_energy" value="50"></input>
+		<br/>
+		<label>Mental Energy</label>
+		<input type="number"name="ment_energy" value="50"></input>
+		<br/>
+		<label>Physical Energy</label>
+		<input type="number"name="phy_energy" value="50"></input>
+		<br/>
+		<label>Popcorn</label>
+		<input type="number"name="popcorn" value="50"></input>
+		<br/>
+		<label>Circumstance</label>
+		<input type="number"name="circumstance" value="50"></input>
 		<br/>
 		
-		<button onclick="verify(); writeToFile();">Write</button>
+		<hr/>
+		<label>Pain</label>
+		<input type="number"name="pain" value="50"></input>
+		<br/>
+		<label>Loneliness</label>
+		<input type="number"name="loneliness" value="50"></input>
+		<br/>
+		<label>Depression</label>
+		<input type="number"name="depression" value="50"></input>
+		<br/>
+		
+		<hr/>
+		<label>Diet</label>
+		<input type="text"name="diet" value="food"></input>
+		<br/>
+		<label>Social</label>
+		<input type="text"name="social" value="none"></input>
+		<br/>
+		<label>Location</label>
+		<input type="text"name="location" value="commune"></input>
+		<br/>
+		<label>Input (Movies/Music)</label>
+		<input type="text"name="input" value="QI"></input>
+		<br/>
+		<label>Comment</label>
+		<textarea type="text"name="comment"></textarea>
+		<br/>
+		
+		<button type="submit">Write</button>
 	</form>
 	</div>
 </body>
